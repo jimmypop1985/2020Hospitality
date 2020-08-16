@@ -1,0 +1,1109 @@
+@charset "utf-8";
+
+html{
+scroll-behavior: smooth;
+scroll-snap-type: x proximity;
+overflow: hidden;
+
+
+}
+body{
+	
+font-family: "sofia";
+		margin: 0;
+}
+
+.container{
+	display: flex;
+	flex-direction: row;
+	height: 100%;
+	min-width: 300%;
+	position: absolute;
+	justify-content: center;
+
+}
+
+
+.titles{
+	scroll-snap-align: center;
+	position: relative;
+	text-align: center;
+}
+
+
+.titlebar {
+	position: fixed;
+	right: 0%;
+	top: 0;
+	z-index: 43;
+	display: flex;
+	width: 40%;
+	height: 100px;
+	background: rgba(0,0,0,0.9);
+	justify-content: center;
+	
+}
+
+.titlebar ul {
+    display: flex;
+    list-style: none;
+	justify-content: center;
+
+}
+
+.titlebar ul h1 {
+	padding:1rem;
+	margin: auto;
+}
+
+.titlebar ul h1 a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color:#F4F4F4;
+}
+
+#video-bg{
+	
+	opacity: 60%;
+}
+
+section {
+	
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	text-transform: uppercase;
+	
+}
+
+
+.titlebar h1 a {
+	font-size: 36px;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color:#F4F4F4
+}
+
+
+
+
+@media screen and (max-width:600px){
+	.name, .email{
+		width:100%;
+	}
+}
+.name{
+	float:left;
+	width:270px;
+}
+
+.email{
+	float:right;
+	width:400px;
+}
+
+.message{
+	min-width: 100%;
+	max-width:100%;
+}
+
+.video-bg{
+	position: fixed;
+	z-index: -99;
+}
+
+.name, .email, .message{
+	opacity:1;
+	background:none;
+	border: none;
+	outline: none;
+	border-bottom: 1px solid;
+	color: white;
+	padding: 10px 6px;
+	font-size: 20px;
+	font-weight:600;
+	margin-bottom: 40px;
+}
+
+.teamslide{
+	opacity: 0.7;
+	text-align: center;
+	display: inline-block;
+}
+.teamslide span{
+	display: inline-block;
+	
+	font-weight: 600;
+	font-size: 16px;
+	color: white; 
+	position: absolute;
+	text-align:center;
+	top: 50%;
+	transform: translate(-50%,-50%);
+	
+	
+}
+
+.teamslide:hover #matt{
+
+	margin-top: 20%;
+	display: none;
+}
+
+.teamslide:hover #matthover{
+
+	margin-top: 20%;
+	display: block;
+}
+
+
+.teamslide #matthover{
+
+	margin-top: 20%;
+	display: none;
+	
+}.teamslide:hover #james{
+
+	margin-top: 20%;
+	display: none;
+}
+
+.teamslide:hover #jameshover{
+
+	margin-top: 20%;
+	display: block;
+}
+
+
+.teamslide #jameshover{
+
+	margin-top: 20%;
+	display: none;
+}.teamslide:hover #oliver{
+
+	margin-top: 20%;
+	display: none;
+}
+
+.teamslide:hover #oliverhover{
+
+	margin-top: 20%;
+	display: block;
+}
+
+
+.teamslide #oliverhover{
+
+	margin-top: 20%;
+	display: none;
+}
+
+.slide{
+	opacity: 0.7;
+	text-align: center;
+	display: inline-block;
+}
+.slide span{
+	position: absolute;
+	text-align:center;
+	top: 50%;
+	font-weight: 600;
+	font-size: 16px;
+	color: white;
+	transform: translate(-50%,-50%);
+	
+}
+
+
+.slide a{
+	position: absolute;
+	text-align:center;
+	top: 50%;
+	font-weight: 600;
+	font-size: 16px;
+	color: white;
+	transform: translate(-50%,-50%);
+	text-decoration: none;
+	
+}
+
+.teamslide{
+	opacity: 0.7;
+	text-align: center;
+	display: inline-block;
+}
+
+.slide:hover #celebrations{
+
+	margin-top: 20%;
+	display: none;
+}
+
+.slide:hover #celebrationshover{
+
+	margin-top: 20%;
+	display: block;
+}
+
+
+.slide #celebrationshover{
+
+	margin-top: 20%;
+	display: none;
+}
+
+
+
+.slide:hover #drinkstyling{
+
+	margin-top: 20%;
+	display: none;
+}
+
+.slide:hover #drinkstylingshover{
+
+	margin-top: 20%;
+	display: block;
+}
+
+
+.slide #drinkstylingshover{
+
+	margin-top: 20%;
+	display: none;
+}
+
+.slide:hover #cocktails{
+
+	margin-top: 20%;
+	display: none;
+}
+
+.slide:hover #cocktailshover{
+
+	margin-top: 20%;
+	display: block;
+}
+
+
+.slide #cocktailshover{
+
+	margin-top: 20%;
+	display: none;
+}
+
+
+.slide:hover #corporate{
+
+	margin-top: 20%;
+	display: none;
+}
+
+.slide:hover #corporatehover{
+
+	margin-top: 20%;
+	display: block;
+}
+
+
+.slide #corporatehover{
+
+	margin-top: 20%;
+	display: none;
+}
+
+.slide:hover #consultancy{
+
+	margin-top: 20%;
+	display: none;
+}
+
+.slide:hover #consultancyhover{
+
+	margin-top: 20%;
+	display: block;
+}
+
+
+.slide #consultancyhover{
+
+	margin-top: 20%;
+	display: none;
+}
+
+
+
+.slide h1{
+	color:white;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+
+.teamslide p{
+	color:white;
+	font-size: 14px;
+}
+
+
+.teamslide h1{
+	color:white;
+	font-size: 14px;
+	font-weight: 500;
+}
+
+
+.slide p{
+	color:white;
+	font-size: 14px;
+}
+
+
+.buttoncontainer{
+
+	height: 10%;
+	width:20%;
+	position: relative;
+	justify-content: center;
+	margin: auto;
+
+}
+
+
+#cancel{
+		position:fixed;
+	right:10px;
+	top:10px;
+}
+
+#cancel2{
+		position:fixed;
+	right:10px;
+	top:10px;
+}
+
+#cancel3{
+		position:fixed;
+	right:10px;
+	top:10px;
+}
+
+#contactpagehover, #who, #christmas{
+	width:100%;
+	height:100%;
+	position: fixed;
+	top:0%;
+	left: 0%;
+	background: black;
+	border: medium white;
+	opacity: 1;
+	align-content: center;
+	justify-content: center;
+	display: flex;
+	flex: none;
+	animation: enquiry 1s ease;
+	z-index:60;
+
+
+	/*animation: slide-1 2s ease;*/
+	
+	
+}
+
+#contactpagehover h1{
+
+	font-size: 20px;
+	letter-spacing: 2px;
+	font-weight: 500;
+	font: "sofia";
+	color: white;
+}
+
+#who h1{
+	position: fixed;
+	margin-left:auto;
+	font-size: 24px;
+	transform: translate(-50%,-50%);
+	letter-spacing: 2px;
+	font-weight: 500;
+	font: "sofia";
+	color: white;
+
+}
+
+#who p{
+	top:300px;
+	padding:200px;
+	position: fixed;
+	margin:auto;
+	transform: translate(-50%,-50%);
+	font-size: 14px;
+	color: white;
+
+}
+
+
+
+#christmas h1{
+	position: fixed;
+	margin-left:auto;
+	font-size: 24px;
+	transform: translate(-50%,-50%);
+	letter-spacing: 2px;
+	font-weight: 500;
+	font: "sofia";
+	color: white;
+
+}
+
+#christmas p{
+	top:300px;
+	padding:200px;
+	position: fixed;
+	margin:auto;
+	transform: translate(-50%,-50%);
+	font-size: 14px;
+	color: white;
+
+}
+.inner-width{
+	
+	padding-top: 50px;
+	padding-bottom: 50px;
+	padding-left: 100px;
+	padding-right: 100px;
+}
+
+.bg{
+	width:100%;
+	background-size: cover;
+	height:100%;
+	transform: scale(1,1);
+	transition: all 300ms ease;
+}
+
+
+.bg:hover{
+
+	transform: scale(1.1,1.1);
+}
+
+#contactpagehover  button{
+
+	align-content: center;
+	background: black;
+	color: white;
+	border: 1px solid white;
+	padding: 12px 40px;
+	border-radius: 8px;
+	text-transform: uppercase;
+	font-size: 14px;
+	transform: 0.4s linear;
+	font-weight: 600;
+
+}
+
+#contactpagehover button:hover{
+	align-content: center;
+	background: white;
+	color: black;
+	border: 1px solid white;
+	transition: 0.4s ease;
+}
+
+#who button:hover{
+	align-content: center;
+	background: white;
+	color: black;
+	border: 1px solid white;
+	transition: 0.4s ease;
+}
+
+#christmas button:hover{
+	align-content: center;
+	background: white;
+	color: black;
+	border: 1px solid white;
+	transition: 0.4s ease;
+}
+#slide-1{
+	width:20%;
+	height:34%;
+	position: absolute;
+	top:33%;
+	left: 40%;
+	background: black;
+	animation: slide-1 2s ease;
+	
+}
+
+#slide-1:hover{
+	width:20%;
+	height:100%;
+	position: absolute;
+	top:0%;
+	left: 40%;
+	background: url("13.jpg") no-repeat center center/cover;
+	animation: hovers1 2s ease;
+	z-index: 45;
+	opacity: 1;
+}
+
+
+
+#slide-2{
+	
+	width:20%;
+	height:34%;
+	position: absolute;
+	top:33%;
+	left: 60%;
+	animation: slide-2 2s ease;
+	background-color: black;
+}
+#slide-2:hover{
+	width:20%;
+	height:100%;
+	position: absolute;
+	top: 0%;
+	left: 60%;
+	background: url("12.jpg") no-repeat center center/cover;
+	animation: hovers2 2s ease;
+	z-index: 45;
+	opacity: 1;
+}
+
+#slide-3{
+	width:20%;
+	height:34%;
+	position: absolute;
+	top:33%;
+	left: 20%;
+	background-color: black;
+	animation: slide-3 2s ease;
+}
+
+#slide-3:hover{
+	width:20%;
+	height:100%;
+	position: absolute;
+	top:0%;
+	left: 20%;
+	background: url("11.jpg")no-repeat center center/cover;
+	animation: hovers3 2s ease;
+	z-index: 45;
+	opacity: 1;
+}
+#slide-4{
+	width:20%;
+	height:34%;
+	position: absolute;
+	top:33%;
+	left: 80%;
+	background-color: black;
+	animation: slide-4 2s ease;
+
+}
+
+#slide-4:hover{
+	width:20%;
+	height:100%;
+	position: absolute;
+	top:0%;
+	left: 80%;
+	background: url("10.jpg")no-repeat center center/cover;
+	animation: hovers4 2s ease;
+	z-index: 45;
+	opacity: 1;
+}
+
+#slide-5{
+	width:20%;
+	height:34%;
+	position: absolute;
+	top:33%;
+	left: 0%;
+	background-color: black;
+	animation: slide-5 2s ease;
+	/*border: 10px solid white;*/
+
+}
+
+#slide-5:hover{
+	width:20%;
+	height:100%;
+	position: absolute;
+	top:0%;
+	left: 0%;
+	background: url("9.jpg")no-repeat center center/cover;
+	opacity: 1;
+	animation: hovers5 2s ease;
+	z-index: 45;
+}
+@keyframes op{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity:0;
+	}
+}
+
+@keyframes hovers1{
+	0%{
+		top:33%;
+		left:40%;
+		width:20%;
+		height: 34%;
+		opacity:1;
+		transform: scale(1);
+		
+	}
+	
+	100%{
+		top:0%;
+		left:40%;
+		width:20%;
+		height: 100%;
+		opacity:1;
+		transform: scale(1);
+
+	}
+}
+
+@keyframes hovers2{
+	0%{
+		top:33%;
+		left:60%;
+		width:20%;
+		height: 34%;
+		opacity:1;
+		transform:scale(1);
+		
+	}
+
+	100%{
+		top:0%;
+		left:60%;
+		width:20%;
+		height: 100%;
+		opacity:1;
+		transform:scale(1);
+	}
+}
+
+@keyframes hovers3{
+	0%{
+		top:33%;
+		left: 20%;
+		width:20%;
+		height: 34%;
+		opacity:1;
+		transform:scale(1);
+	}
+	
+	100%{
+		top:0%;
+		left:20%;
+		width:20%;
+		height: 100%;
+		opacity:1;
+		transform:scale(1);
+	}
+}
+	
+@keyframes hovers4{
+	0%{
+		top:33%;
+		left: 80%;
+		width:20%;
+		height: 34%;
+		opacity:1;
+		transform:scale(1);
+	}
+	
+	100%{
+		top:0%;
+		left: 80%;
+		width:20%;
+		height: 100%;
+		opacity:1;
+		transform:scale(1);
+	}
+}
+
+@keyframes hovers5{
+	0%{
+		top:33%;
+		left:0%;
+		width:20%;
+		height: 34%;
+		opacity:1;
+		transform:scale(1);
+
+		
+	}
+	
+	100%{
+		top:0%;
+		left:0%;
+		width:20%;
+		height: 100%;
+		opacity:1;
+		transform:scale(1);
+	}
+}
+
+@keyframes slide-1{
+	0%{
+		top:0%;
+		left:40%;
+		width:20%;
+		height: 100%;
+		transform: scale(1);
+
+		
+	}
+	
+	100%{
+		top:33%;
+		left:40%;
+		width:20%;
+		height: 34%;
+		transform: scale(1);
+
+	}
+}
+
+@keyframes slide-3{
+	0%{
+		top:0%;
+		left: 20%;
+		width:20%;
+		height: 100%;
+		transform: scale(1);
+
+		
+	}
+	
+	100%{
+		top:33%;
+		left:20%;
+		width:20%;
+		height: 34%;
+		transform: scale(1);
+	}
+}
+
+@keyframes slide-2{
+	0%{
+		top:0%;
+		left:60%;
+		width:20%;
+		height: 100%;
+		transform: scale(1);
+		
+	}
+	
+	100%{
+		top:33%;
+		left:60%;
+		width:20%;
+		height: 34%;
+		transform: scale(1);
+	}
+}
+
+@keyframes slide-5{
+	0%{
+		top:0%;
+		left:0%;
+		width:20%;
+		height: 100%;
+
+		transform: scale(1);
+
+		
+	}
+	
+	100%{
+		top:33%;
+		left:0%;
+		width:20%;
+		height: 34%;
+		transform: scale(1);
+
+	}
+}
+
+@keyframes slide-4{
+	0%{
+		top:0%;
+		left: 80%;
+		width:20%;
+		height: 100%;
+		transform: scale(1);
+		
+	}
+	
+	100%{
+		top:33%;
+		left: 80%;
+		width:20%;
+		height: 34%;
+		transform: scale(1);
+
+	}
+}
+
+@keyframes slide-6{
+	100%{
+		top:33%;
+		left: 0%;
+		width:33%;
+		height: 34%;
+		transform:scale(1);
+
+	}
+	
+	0%{
+		top:0%;
+		left: 0%;
+		width:33%;
+		height: 100%;
+		transform: scale(1);
+
+	}
+}
+
+@keyframes hovers6{
+	100%{
+		top:0%;
+		left: 0%;
+		width:33%;
+		height: 100%;
+		opacity:1;
+		transform:scale(1);
+	}
+	
+	0%{
+		top:33%;
+		left: 0%;
+		width:33%;
+		height: 34%;
+		opacity:1;
+		transform: scale(1);
+
+	}
+}
+
+@keyframes slide-7{
+	100%{
+		top:33%;
+		left: 33%;
+		width:34%;
+		height: 34%;
+		transform:scale(1);
+	}
+	
+	0%{
+		top:0%;
+		left: 33%;
+		width:34%;
+		height: 100%;
+		transform: scale(1);
+	}
+}
+
+@keyframes hovers7{
+	100%{
+		top:0%;
+		left: 33%;
+		width:34%;
+		height: 100%;
+		opacity:1;
+		transform:scale(1);
+
+	}
+	
+	0%{
+		top:33%;
+		left: 33%;
+		width:34%;
+		height: 34%;
+		opacity:1;
+		transform: scale(1);
+	}
+}
+
+@keyframes slide-8{
+	100%{
+		top:33%;
+		left: 67%;
+		width:33%;
+		height: 34%;
+		transform:scale(1);
+	}
+	
+	0%{
+		top:0%;
+		left: 67%;
+		width:33%;
+		height: 100%;
+		transform: scale(1);
+	}
+}
+
+@keyframes hovers8{
+	0%{
+		top:33%;
+		left: 67%;
+		width:33%;
+		height: 34%;
+		opacity: 1 ;
+		transform: scale(1);
+	}
+	
+	100%{
+		top:0%;
+		left: 67%;
+		width:33%;
+		height: 100%;
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+
+@keyframes enquiry{
+	0%{
+		top:50%;
+		left: 50%;
+		width:0%;
+		height: 0%;
+		opacity: 1 ;
+		transform: scale(1);
+	}
+	
+	100%{
+		top: 0%;
+		left: 0%;
+		width:100%;
+		height: 100%;
+		opacity: 1;
+		transform: scale(1);
+	}
+}
+
+#slide-6{
+	width:33%;
+	height:34%;
+	position: absolute;
+	top:33%;
+	left: 0px;
+	background-color: black;
+	animation: slide-6 2s ease;
+	transform:scale(1);
+	z-index: 1;
+}
+
+#slide-6:hover{
+	width:33%;
+	height:100%;
+	position: absolute;
+	top:0%;
+	left: 0%;
+	opacity: 1;
+	background: url("matt.jpeg") no-repeat center center/cover;
+	animation: hovers6 2s ease;
+	transform: scale(1);
+	z-index: 45;
+}
+
+#slide-7{
+	width:34%;
+	height:34%;
+	position: absolute;
+	top:33%;
+	left: 33%;
+	background-color: black;
+	animation: slide-7 2s ease;
+	transform: scale(1);
+	z-index: 1;
+}
+
+#slide-7:hover{
+	width:34%;
+	height:100%;
+	position: absolute;
+	top:0%;
+	left: 33%;
+	opacity: 1;
+	background: url("jimmy.jpg") no-repeat center center/cover;
+	animation: hovers7 2s ease;
+	transform: scale(1);
+	z-index: 45;
+}
+
+#slide-8{
+	width:33%;
+	height:34%;
+	position: absolute;
+	top:33%;
+	left: 67%;
+	background-color: black;
+	animation: slide-8 2s ease;
+	transform: scale(1);
+	z-index: 1;
+}
+
+#slide-8:hover{
+	width:33%;
+	height:100%;
+	position: absolute;
+	top:0%;
+	left: 67%;
+	opacity: 1;
+	background: url("olly.jpeg") no-repeat center center/cover;
+	animation: hovers8 2s ease;
+	transform: scale(1);
+	z-index: 45;
+}
+
+
+.gallerys{
+	
+	
+	display: flex;
+	flex-wrap: wrap;
+	width: calc(100%-50px);
+	margin:33vh auto 0;
+	height: 34%;
+}
+
+.gallerys a{
+	display: block;
+	text-decoration: none;
+	width:25%;
+	
+	overflow: hidden;
+	outline:none;
+	height:220px;
+}
+
+.gallerys a img{
+	height: 100%;
+	transform:scale(1,1);
+	transition: all 300ms ease;
+}
+	
+	.gallerys a img:hover{
+	transform: scale(1.1,1.1);	
+}
+
+

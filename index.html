@@ -1,0 +1,194 @@
+<!doctype html>
+
+<head>
+<meta charset="utf-8">
+<meta name = "viewport" content="width-device-width, initisl-scale-1.0>">
+	<meta http-equiv="X-UA-Compatible" content="ie-edge">
+<title>Twenty20Hospitality</title>
+<link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+<link rel="stylesheet" href = "style.css">
+	<link rel="stylesheet" href = "menu.css">
+</head>
+<html  lang = "en">
+	
+	
+<body>
+	<script>
+	
+		function showDiv(){
+		document.getElementById("contactpagehover").style.display = "";
+		}
+		
+		function showDiv2(){
+		document.getElementById("who").style.display = "";
+		}
+		
+			function showDiv3(){
+		document.getElementById("christmas").style.display = "";
+		}
+		
+			function closeDiv(){
+		document.getElementById("contactpagehover").style.display = "none";
+		}
+		
+		function closeDiv2(){
+		document.getElementById("who").style.display = "none";
+		}
+		
+		
+		function closeDiv3(){
+		document.getElementById("christmas").style.display = "none";
+		}
+	</script>	
+	
+<nav class="titlebar">
+	<ul>
+	<h1><a href="#about">Twenty20 Hospitality</a></h1>
+	
+	</ul>
+	
+		<div class = "nav-wrap">
+			<input type = "checkbox" class = "toggler">
+			
+	</div>
+	</div>
+	
+	<div class = "menu-wrap">
+	<input type = "checkbox" class = "toggler">
+		<div class = "hamburger"><div></div></div>
+	<div class = "menu">
+		<div>
+		<div>
+			<ul>
+			<li><a href ="#about">OUR SERVICES</a></li>
+				<li><a href ="#team">MEET THE TEAM</a></li>	
+	<li><a href ="#gallerys">GALLERY</a></li>
+				<li><a onClick="showDiv2()">WHO WE ARE</a></li>
+			
+	<li><a onClick="showDiv()">MAKE AN ENQUIRY</a></li>
+	
+	<li><a onClick="showDiv3()">CHRISTMAS</a></li>
+		
+			</ul>
+		</div>
+		</div>
+		</div>
+		</div>
+					
+	
+	
+	</nav>
+
+	<div class = "container">
+
+		<section class ="titles" id = "about">		
+		<video class ="video-bg" id = "video-bg" autoplay muted loop>
+			<source src ="2header.mp4" type ="video/mp4"></video>
+
+			<ul id = "slides">
+			
+				<div class = "slide" id ="slide-1"><span id = "celebrations">CELEBRATIONS</span><h1 id = "celebrationshover" >Celebrations<p>We can make your celebration unforgettable with our bespoke packages</p></h1></div>			
+				<div class = "slide" id ="slide-2"><span id = "corporate">CORPORATE</span><h1 id = "corporatehover" >Corporate Events<p>Planning a corporate event? Let us take care of the details so you can focus on business!</p></h1></div>
+				<div class = "slide" id ="slide-3"><span id = "cocktails">COCKTAILS</span><h1 id = "cocktailshover" >Cocktails<p>We work with the best mixologists in the business who will create bespoke drinks for your event</p></h1></div>
+				<div class = "slide" id ="slide-4"><span id = "consultancy">CONSULTANCY</span><h1 id = "consultancyhover" >Consultancy<p>Opening a restaurant? We can provide you with mentorship, management training and menu design.</p></h1></div>
+				
+				<div class = "slide" id ="slide-5"><span id = "drinkstyling">DRINKS STYLING</span><h1 id = "drinkstylingshover" >Drinks Styling<p>If you need some beautiful, professional looking images for your publication, look no further as we can provide this for you</p></h1></div>
+				
+						</ul>
+
+	<div id ="contactpagehover" style = "display:none"><div class = "inner-width">								
+										<form method = "post" action = "form.php">
+									<h1>SEND US YOUR DETAILS</h1>
+									<input type="text" class = "name" name = "name" placeholder="Name">	
+									<input type="email" class = "email" name = "email" placeholder="Email">	
+									<textarea rows="5" class = "message" name = "message" placeholder="Message"></textarea>					
+									
+									<div class = "buttoncontainer">		
+									<button type="submit" name = "submit" value = "submit" >SEND ENQUIRY</button>
+									
+											</div>
+									</form>
+	
+		<button type = "cancel" id = "cancel" onClick="closeDiv()" >X</button>
+								</div></div>
+	
+							</section>
+							
+												
+<div class = "menu" id = "who" style ="display:none"><div class = "inner-width">	
+					<ul>
+					<h1>WHO WE ARE</h1>
+					<p>Starting in 2020, three hospitality professionals were fed up of seeing events being run by people who don't have hospitality as their full time passion. With a collective experience of bla bla bla bla bla.</p>
+					</ul>
+<button type = "cancel" id = "cancel2" onClick="closeDiv2()" >X</button>		
+	</div></div>
+		
+		<div class = "christmas" id = "christmas" style ="display:none"><div class = "inner-width">	
+					<ul>
+					<h1>CHRISTMAS</h1>
+					<p>Booking a christmas party? Send us a message. We can take care of the venue, the catering and the music. Blah blah blah blah fill this with interesting text. </p>
+					</ul>
+<button type = "cancel" id = "cancel3" onClick="closeDiv3()" >X</button>		
+			</div></div>
+		
+		<section class = "titles" id = "team">
+			
+			<div class = "teamslide" id ="slide-6"><span id = "matt">MATT MCCLYMONT</span><h1 id = "matthover" >Matt Mcclymont<p>Matt has been in the hospitality industry for fourteen years, operating a broad range of venues from high volume nightclubs to owning three of his own venues. Working as a consultant, Matt has overseen bars and catering at many events including a VIP high volume cocktail bar at Royal Ascot races, bars at Oxford and Cambridge Universities may balls, and most recently as Operations Manager at the hugely successful London in the Sky in 2019.</p></h1></div>
+				<div class = "teamslide" id ="slide-7"><span id = "james">JAMES DRUMMOND</span><h1 id = "jameshover" >lorem ipsum text<p>James has been a professional bar manager and award-winning mixologist who has been shaking thing up for the last 16 years. His previous endeavours include running the training programme for the celebrated London Cocktail Club group of bars and  General Manager at Opium Cocktail and Dim Sum Parlour in central London. As a consultant he has worked in projects all over the UK, including the bar consultancy at London in the Sky. His international projects include a consultancy position in the Phillipines and managing a restaurant bar in the Cayman Islands!</p></h1></div>
+				<div class = "teamslide" id ="slide-8"><span id = "oliver">OLLIE MASKELL</span><h1 id = "oliverhover" >Ollie Maskell<p>Ollie has been working in the Hospitality industry for 14 years with a vast knowledge of food having managed venues offering every type of cuisine, from Gourmet Burgers and Wood fired Pizzas right the way up to fine dining, managing Bistro Union when they were awarded a Bib Gourmand. Ollie has a great passion for Cocktails, with Powder Keg Diplomacy winning a number of much coveted cocktail awards under his stewardship, including Londons best Cocktail at Cocktails in the City. He is also a part shareholder in Lost Society in south west London hosting events from club nights, cocktail parties, birthdays, baby showers and wedding receptions</p></h1></div>
+				
+		</section>			
+		<section class = "gallerys" id = "gallerys">
+			
+			<a href = "1.jpg" data-fancybox="gallery" data-caption = "Pic1">
+				<div class = "bg" style = "background-image: url(1.jpg);"></div>
+				
+			</a>
+			
+			<a href = "2.jpg" data-fancybox="gallery" data-caption = "Pic2">
+				<div class = "bg" style = "background-image: url(2.jpg);"></div>
+			</a>
+				
+			<a href = "3.jpg" data-fancybox="gallery" data-caption = "Pic3">
+				<div class = "bg" style = "background-image: url(3.jpg);"></div>
+			</a>
+			
+			<a href = "4.jpg"  data-fancybox="gallery" data-caption = "Pic4 ">
+				<div class = "bg" style = "background-image: url(4.jpg);"></div>
+			</a>
+
+						
+			<a href = "5.jpg" data-fancybox="gallery" data-caption = "Pic1">
+			
+				<div class = "bg" style = "background-image: url(5.jpg);"></div>
+				
+			</a>
+			
+			<a href = "6.jpg" data-fancybox="gallery" data-caption = "Pic2">
+				<div class = "bg" style = "background-image: url(6.jpg);"></div>
+			</a>
+				
+			<a href = "7.jpg" data-fancybox="gallery" data-caption = "Pic3">
+				<div class = "bg" style = "background-image: url(7.jpg);"></div>
+			</a>
+			
+			<a href = "8.jpg"  data-fancybox="gallery" data-caption = "Pic4 ">
+				<div class = "bg" style = "background-image: url8.jpg);"></div>
+			</a>*/
+			
+		
+			
+		</section>
+			
+
+</div>
+
+<script type= "text/javascript" src = "https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="jquery.fancybox.min.js"></script>
+			
+
+</body>
+
+</html>
+
+		

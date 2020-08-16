@@ -1,0 +1,246 @@
+@charset "utf-8";
+/* CSS Document */
+
+.menu-wrap{
+	position: fixed;
+	top: 0%;
+	left: 0%;
+	z-index:55;
+}
+
+.menu-wrap .toggler{
+	position:absolute;
+	top: 0;
+	left:0;
+	z-index: 56;
+	cursor: pointer;
+	width: 68px;
+	height: 68px;
+	opacity:0;
+	
+}
+
+.menu-wrap .hamburger{
+	position: absolute;
+	top: 0;
+	left:0;
+	z-index: 55;
+	width: 68px;
+	height: 68px;
+	padding:1rem;
+	background: black;
+	opacity:0.9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.menu-wrap .hamburger:hover{
+	transform: scale(1.1,1.1);
+	opacity:1;
+	cursor: pointer;
+}
+
+.menu-wrap .hamburger > div{
+	position: relative;
+	width: 100%;
+	height: 2px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger > div{
+	position: relative;
+	width: 100%;
+	height: 2px;
+	background-color: white;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s ease;
+}
+
+.menu-wrap .hamburger > div:before, .menu-wrap .hamburger > div:after{
+	
+	content: "";
+	position: absolute;
+	z-index: 55;
+	top: -10px;
+	width: 100%;
+	height: 2px;
+	background-color: inherit;
+}
+
+.menu-wrap .hamburger > div:after{
+	top: 10px;
+}
+
+.menu-wrap .toggler:checked + .hamburger >div{
+	top:0;
+	transform: rotate(135deg);
+}
+
+.menu-wrap .toggler:checked + .hamburger >div:before{
+visibility: hidden;
+}
+
+.menu-wrap .toggler:checked:hover + .hamburger >div:before, .menu-wrap .toggler:checked + .hamburger >div:after{
+	top:0;
+	transform:rotate(90deg);
+	
+}
+
+
+.menu-wrap .toggler:checked:hover + .hamburger >div{
+	transform: rotate(225deg);
+}
+
+.menu-wrap .menu{
+	position:fixed;
+	top:100px;
+	left:0;  
+	width: 100%;
+	height: 17%;
+	visibility:hidden;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
+
+.menu-wrap .toggler:checked ~ .menu{
+	visibility: visible;
+}
+
+.menu-wrap .toggler:checked ~ .menu >div{
+	transform: scale(1);
+	transition-duration: 1s;
+}
+
+.menu-wrap .toggler:checked ~ .menu >div >div{
+	opacity:1;
+	transition: 0.4s ease;
+}
+
+.menu-wrap .menu >div{
+	background:black;
+	opacity:90%;
+	border-radius: 50%;
+	width:200vw;
+	height:200vw;
+	display: flex;
+	flex:none;
+	align-items: center;
+	justify-content: center;
+	transition: all 0.4s ease;
+	transform: scale(0);
+}
+
+.menu-wrap .menu >div > div{
+	text-align: center;
+	max-width: 90vw;
+	max-height: 100vh;
+	opacity: 0;
+	transition: opacity 0.4s ease;
+}
+
+.menu-wrap .menu >div >div >ul >li {
+	list-style: none;
+	color: white;
+	font-size:1.5rem;
+	padding:1.5rem;
+}
+
+.menu-wrap .menu >div >div >ul >li >a{
+	color: inherit;
+	text-decoration: none;
+	transition: color 0.4s ease;
+}
+
+
+
+.nav-wrap{
+	position: fixed;
+	top: 0%;
+	left: 100px;
+	z-index:55;
+}
+
+.nav-wrap .toggler{
+	position:absolute;
+	top: 0;
+	left:0;
+	z-index: 56;
+	cursor: pointer;
+	width: 50px;
+	height: 50px;
+	opacity:0;
+	
+}
+
+.nav-wrap .hamburger{
+	position: absolute;
+	top: 0;
+	left:0;
+	z-index: 55;
+	width: 688px;
+	height: 68px;
+	padding:1rem;
+	background: black;
+	opacity:0.9;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+}
+
+
+.nav-wrap .hamburger li {
+
+	border-spacing: 10px;
+	padding:30px;
+}
+
+.nav-wrap .hamburger li:hover {
+
+	transform: scale(1.5,1.5);
+	cursor: pointer;
+
+
+}
+
+.nav-wrap .hamburger li a{
+	display: flex;
+	color: white;
+	font-size: 1rem;
+	text-decoration: none;
+	transition: color 0.4s ease;
+	
+}
+
+
+.nav-wrap .hamburger li a:hover{
+		color:skyblue;
+}
+.nav-wrap .menu{
+	position:fixed;
+	background: black;
+	opacity:1;
+	top:0;
+	left:0;  
+	width: 100%;
+	height: 100%;
+	
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	
+}
+
